@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+
+    <title>Who Killed Kenny?</title>
+
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: arial;
+        max-width: 990px;
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/southPark.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="js/southPark-ng.js"></script>
+
+  </head>
+
+  <body class="NotdebugMode" ng-app="killingKennyApp">
+    <div id="spApp" ng-controller="SouthParkController">
+      <div  class="ins_title">
+        <h1> Who Killed Kenny? </h1>
+        <span> Here are the suspects. your job is to sort the from who you think is the most likely to the least likely, by clicking on the suspect </span>
+
+      </div>
+      <div  class="iconListContainer">
+        <div id="select_list" class="iconList">
+          <div class='spIcon' ng-repeat="iconName in unselectedIconList" ng-click="clickAction( iconName )">
+            <img class='southParkIcon {{ iconName }}'/>
+            <div class='name'>
+              {{ iconName }}
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <hr>
+      <div  class="iconListContainer">
+        <div id="target_list" class="iconList">
+          <div class='spIcon' ng-repeat="iconName in selectedIconList">
+            <img class='southParkIcon {{ iconName }}'/>
+            <div class='name'>
+              {{ iconName }}
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="ins_buttons">
+        <p></p><p></p>
+
+        <button type="button" id="save">
+          Save
+        </button>
+        <button type="button" id="reset" ng-click="resetAll(  )">
+          Reset
+        </button>
+      </div>
+    </div>
+
+  </body>
+
+</html>

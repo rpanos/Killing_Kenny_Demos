@@ -1,0 +1,175 @@
+
+.debugMode div{
+  border: red 2px solid;
+}
+
+#spApp {
+  /*width: 1050px;*/
+  width: 100%;
+  margin: 50px;
+}
+.iconList {
+  /*float: left;*/
+  
+  min-height: 200px;
+  /*width: 90%;*/
+  /*display: block;*/
+  margin-right: auto; 
+  margin-left: auto;
+  display: table;
+}
+.iconListContainer {
+  /*width: 100%;*/
+  /*position: relative;*/
+  min-height: 200px;
+  
+
+  
+}
+#select_list{
+
+  /*margin: 0 20px 0 20px;*/
+}
+
+#target_list {
+
+  /*margin: 0 20px 0 20px;*/
+}
+
+.spIcon {
+  /*icons are 100 X 150*/
+  background-color: white;
+  width: 100px;
+  height: 170px;
+  
+  padding: 5px;
+  border-radius:5px;
+  float: left;
+  
+  background-color:grey;
+  opacity:0.5;
+  filter:Alpha(opacity=50); /* IE8 and earlier */
+  
+  margin: 10px; 
+}
+/*TODO: use SASS or LESS*/
+.spIcon .name {
+  width: 100px;
+  height: 20px;
+  float: left;
+  color: black;
+  text-align:center;
+}
+
+.spIcon img {
+  
+  border: 1px black solid;
+  position:relative;
+  top:-1px;
+  left:-1px;
+}
+
+.spIcon.selectedIcon,
+.spIcon:hover,
+#target_list .spIcon {
+
+  opacity:1.0;
+}
+
+.ins_buttons{
+  width: 100%;
+  
+  position: relative;
+
+}
+
+.ins_buttons button{
+  float: right;
+}
+.ins_title {
+  width: 100%; 
+}
+
+img.southParkIcon.stan
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png") 0 0;
+}
+img.southParkIcon.tweak
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png")  -105px 0;
+}
+img.southParkIcon.kyle
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png")  -207px 0;
+}
+img.southParkIcon.cartman
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png")  -310px 0;
+}
+img.southParkIcon.wendy
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png")  -413px 0;
+}
+img.southParkIcon.ike
+{
+  width:100px;
+  height:150px;
+  background:url("../i/characters-sprite.png")  -517px 0;
+}
+img.southParkIcon.kenny
+{
+  width:100px; /*102*/
+  height:150px; /*152*/
+  background:url("../i/characters-sprite.png")  -619px 0;  /*-618px 1*/
+}
+
+
+
+.button {
+  
+    width: 200px;
+    height: 30px;
+  
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+
+

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+	<title>Who Killed Kenny?</title>
+
+	<style>
+
+		body				{background-color: #000; color:#fff; font-family:arial; max-width:990px;}
+
+	</style>
+  <link rel="stylesheet" href="css/southPark.css">
+
+  <script>
+    var dojoConfig = {
+      baseScriptUri: "js/dojo",
+      isDebug: true,
+      parseOnLoad: true
+    };
+    </script>
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7/dojo/dojo.js" data-dojo-config="async:true"></script>
+	<!-- <script type="text/javascript" src="../../dojo/dojo.js" data-dojo-config="async:true"></script> -->
+	<script src="js/southPark-dojo.js"></script>
+
+</head>
+
+
+<body class="NotdebugMode">
+  <div id="spApp">
+    <div  class="ins_title">
+      <h1> Who Killed Kenny? </h1>  
+      <span>
+        Here are the suspects. your job is to sort the from who you think is the most likely to the least likely, by clicking on the suspect
+      </span>
+     
+    </div>
+    <div  class="iconListContainer">
+      <div id="select_list" class="iconList">
+        
+        
+      </div>
+    </div>
+    <hr>
+    <div  class="iconListContainer">
+      <div id="target_list" class="iconList">
+        
+      </div>
+    </div>
+    <div class="ins_buttons">
+        <p></p><p></p>
+        <!-- Appolgies on this styling! -->
+   
+      <button type="button" id="save">Save</button>
+      <button type="button" id="reset">Reset</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
